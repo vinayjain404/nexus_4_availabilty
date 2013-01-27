@@ -27,7 +27,7 @@ pip-log.txt
 .mr.developer.cfg
 
 #swap files
-*.sw[po]
+*.sw[pon]
 
-# sqlite db
-fav_locations.db
+# settings.py
+settings.py
