@@ -25,6 +25,7 @@ def check_availability():
                 log("available")
                 send(NEXUS_4_GOOGLE_URL)
                 log("Mail sent")
+                delay = 86400
             else:
                 log("No clear response: ")
                 log(page)
