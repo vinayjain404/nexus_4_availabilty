@@ -1,5 +1,6 @@
 import datetime
 import pdb
+import time
 import urllib
 
 from send_mail import send
@@ -16,6 +17,7 @@ def check_availability():
     delay = DEFAULT_DELAY
     while True:
         try:
+            log("Querying the page")
             proxies = {'http': PROXY_URL}
             response = urllib.urlopen(NEXUS_4_GOOGLE_URL, proxies=proxies)
             page = response.read()
